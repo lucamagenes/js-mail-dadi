@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    padding: 4rem;
+    margin: 4rem auto;
+    background-color: cornflowerblue;
+    color: rgb(39, 39, 39);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(99, 99, 99);
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.form_group, p, #accedi {
+    margin: 0.5rem;
+}

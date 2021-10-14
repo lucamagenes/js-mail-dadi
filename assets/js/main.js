@@ -2,31 +2,41 @@
 
 //Chiedi all’utente la sua email
 
-/* 
-let userMail = prompt('Inserisci la tua mail');
-console.log(userMail);
 
-const approvedMails = ["prova1@gmail.com", "prova2@gmail.com", "prova3@gmail.com", "prova4@gmail.com"];
+//email approvate dal programma
 
+const accedi = document.getElementById("accedi")
 const negato = document.getElementById('negato');
 const abilitato = document.getElementById('abilitato');
 
 
-//controlla che sia nella lista di chi può accedere
-for (let index = 0; index < approvedMails.length; index++) {
-    const approvedMail = approvedMails[index];
+accedi.addEventListener('click', function () {
 
-    //stampa un messaggio appropriato sull’esito del controllo
-    if (userMail === approvedMail) {
-        console.log('Accesso abilitato');
-        abilitato.innerHTML = "Accesso abilitato";
-        negato.style.display = "none";
-    } else {
-        console.log('Accesso negato');
-        negato.innerHTML = "Accesso negato";
+    const userMailElement = document.getElementById("email");
+
+    const userMail = userMailElement.value;
+
+    const approvedMails = ["prova1@gmail.com", "prova2@gmail.com", "prova3@gmail.com", "prova4@gmail.com"];
+
+
+    //controlla che sia nella lista di chi può accedere
+    for (let index = 0; index < approvedMails.length; index++) {
+        const approvedMail = approvedMails[index];
+
+        //stampa un messaggio appropriato sull’esito del controllo
+        if (userMail === approvedMail) {
+            console.log('Accesso abilitato');
+            abilitato.innerHTML = "Accesso abilitato";
+            negato.style.display = "none";
+        } else {
+            console.log('Accesso negato');
+            negato.innerHTML = "Accesso negato";
+        }
     }
-}
- */
+});
+
+
+
 
 
 

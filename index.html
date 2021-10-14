@@ -9,21 +9,37 @@
     </head>
     <body>
 
-        <h1>
-            Accedi
-        </h1>
+        <div class="container">
 
-        <p id="negato"></p>
-        <p id="abilitato"></p>
+            <h1>
+                Accedi
+            </h1>
 
+            <div class="form">
+                <div class="form_group">
+                    <label for="email">Inserisci la tua mail</label>
+                    <input type="email" name="email" id="email"
+                        placeholder="email@email.com">
+                </div>
+                <input type="button" value="Accedi" id="accedi">
+            </div>
 
-        <h2>
-            GIOCO DEI DADI
-        </h2>
+            <p id="abilitato"></p>
+            <p id="negato"></p>
 
-        <P id="user_play">Il tuo numero: </P>
-        <P id="pc_play">Il numero del pc: </P>
-        <P id="risultato"></P>
+        </div>
+
+        <div class="container">
+
+            <h2>
+                GIOCO DEI DADI
+            </h2>
+
+            <P id="user_play">Il tuo numero: </P>
+            <P id="pc_play">Il numero del pc: </P>
+            <P id="risultato"></P>
+
+        </div>
 
         <script src="./assets/js/main.js"></script>
     </body>
