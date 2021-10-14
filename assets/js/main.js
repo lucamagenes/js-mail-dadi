@@ -5,18 +5,26 @@
 let userMail = prompt('Inserisci la tua mail');
 console.log(userMail);
 
-const approvedMails = ["prova1@gmail.com", "prova2@gmail.com", "prova3@gmail.com", "prova4@gmail.com"]
+const approvedMails = ["prova1@gmail.com", "prova2@gmail.com", "prova3@gmail.com", "prova4@gmail.com"];
+
+const negato = document.getElementById('negato');
+const abilitato = document.getElementById('abilitato');
 
 
 for (let index = 0; index < approvedMails.length; index++) {
     const approvedMail = approvedMails[index];
 
-    if (userMail !== approvedMail) {
-        console.log('Accesso negato');
-    } else {
+    if (userMail === approvedMail) {
         console.log('Accesso abilitato');
+        abilitato.innerHTML = "Accesso abilitato";
+        negato.style.display = "none";
+    } else {
+        console.log('Accesso negato');
+        negato.innerHTML = "Accesso negato";
     }
 }
+
+
 
 
 //controlla che sia nella lista di chi può accedere
